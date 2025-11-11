@@ -1,2 +1,2 @@
 # D-EMAML
-We will upload codes soon.
+Codes will be uploaded soon.
