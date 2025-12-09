@@ -1,7 +1,3 @@
-# Introduction
-
-This repo is from D-EMAML, that tackles the challenging task of detecting money laundering patterns in financial transaction networks by leveraging dual-edge motifs and graph neural networks for direct edge anomaly detection.
-
 # Data Source
 
 AMLWorld: [AMLWorld]([IBM Transactions for Anti Money Laundering (AML)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml/data))
@@ -64,12 +60,12 @@ conda env create -f environment.yaml
 For GAT baseline:
 
 ```bash
-python main.py --ratio 0.01 --model GAT --experiment_name GAT --data AMLWorld --trails 5
+python main.py --ratio 0.1 --model_name GAT --experiment_name GAT --data AMLWorld --trails 5 --add_feature
 ```
 
 For D-EMAML baseline:
 
 ```bash
-python main.py --ratio 0.01 --model DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4
+python main.py --ratio 0.01 --model_name DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4 --add_feature
 ```
 
