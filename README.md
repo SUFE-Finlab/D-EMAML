@@ -64,12 +64,12 @@ conda env create -f environment.yaml
 For GAT baseline:
 
 ```bash
-python main.py --ratio 0.01 --model_name GAT --experiment_name GAT --data AMLWorld --trails 5
+python main.py --ratio 0.01 --model GAT --experiment_name GAT --data AMLWorld --trails 5
 ```
 
 For D-EMAML baseline:
 
 ```bash
-python main.py --ratio 0.01 --model_name DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4
+python main.py --ratio 0.01 --model DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4
 ```
 
