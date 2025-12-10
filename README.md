@@ -66,6 +66,6 @@ python main.py --ratio 0.1 --model_name GAT --experiment_name GAT --data AMLWorl
 For D-EMAML baseline:
 
 ```bash
-python main.py --ratio 0.01 --model_name DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4 --add_feature
+python main.py --ratio 0.01 --model_name DEMGNN --experiment_name DEMGNN --data AMLWorld --trails 5 --batch_size 16 --add_feature --n_classes 4 --add_feature --input_dims 1048
 ```
 
